@@ -1,0 +1,38 @@
+@use "lib/responsive" as r;
+@forward "lib/responsive";
+
+@function sp($v){
+  @return r.calc-vw(sp, $v);
+}
+
+@function sp1($v){
+  @return r.calc-vw(sp1, $v);
+}
+
+@function sp2($v){
+  @return r.calc-vw(sp2, $v);
+}
+
+@function tb($v){
+  @return r.calc-vw(tb, $v);
+}
+
+@function tb1($v){
+  @return r.calc-vw(tb1, $v);
+}
+
+@function tb2($v){
+  @return r.calc-vw(tb2, $v);
+}
+
+@function pc($v){
+  @return r.calc-vw(pc, $v);
+}
+
+@function pc1($v){
+  @return r.calc-vw(pc1, $v);
+}
+
+@function pc2($v){
+  @return r.calc-vw(pc2, $v);
+}

@@ -1,0 +1,16 @@
+@use "../base/shortcut-functions" as f;
+@use "./modules" as modules;
+
+html {
+  -webkit-text-size-adjust: none;
+  @media (max-width: 750px) {
+    font-size: calc(5px + (10 - 5) * ((100vw - 375px) / (750 - 375)));
+  }
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ P ゴシック", sans-serif;
+  // font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  // font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "ＭＳ P ゴシック", sans-serif;
+  // font-family: 'Noto Sans JP', "メイリオ", Meiryo, sans-serif;
+}

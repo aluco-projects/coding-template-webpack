@@ -1,0 +1,11 @@
+@use "link" as link-module;
+
+@mixin common-block {
+  width: 100%;
+  padding-left: calc(50% - 570px) !important;
+  padding-right: calc(50% - 570px) !important;
+}
+
+@mixin black-bg {
+  background-color: #282828;
+}

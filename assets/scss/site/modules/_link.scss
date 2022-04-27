@@ -1,0 +1,17 @@
+@mixin image-link-hover {
+  img {
+    transition: opacity 200ms;
+  }
+
+  &:hover img {
+    opacity: 0.7;
+  }
+}
+
+@mixin text-link-hover {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
