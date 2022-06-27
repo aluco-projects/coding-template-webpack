@@ -7,7 +7,6 @@
     "watch": "webpack --config webpack.dev.js --watch"
   },
   "devDependencies": {
-    "@squoosh/lib": "^0.4.0",
     "autoprefixer": "^10.4.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.4",

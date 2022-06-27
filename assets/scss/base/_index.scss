@@ -1,6 +1,6 @@
 @use "lib/responsive" as r;
 @use "../site/variables" as v;
-@forward "lib/ress";
+@forward "lib/reset";
 
 // display property
 
@@ -8,7 +8,9 @@
   @include r.mq($id) {
     @each $_id, $_width in v.$break-points {
       @if $id != $_id {
-        .#{$_id}:not(.#{$id}) {display: none;}
+        .#{$_id}:not(.#{$id}) {
+          display: none;
+        }
       }
     }
   }

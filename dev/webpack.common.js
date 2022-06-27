@@ -1,7 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 // production モード以外の場合、変数 enabledSourceMap は true
 // 本番環境のときはsoucemapを出力させない設定
@@ -12,6 +11,10 @@ module.exports = {
   entry: {
     // コンパイル対象のファイルを指定
     styles: path.resolve(__dirname, "../assets/scss/styles.scss"),
+  },
+  // sassのコンパイル先フォルダを指定
+  output: {
+    path: path.resolve(__dirname, "../assets"),
   },
   module: {
     rules: [
@@ -67,14 +70,6 @@ module.exports = {
   },
   target: ["web", "es5"], // ES5(IE11等)向けの指定
   plugins: [
-    // 出力先のフォルダを一旦空に
-    new CleanWebpackPlugin({
-      // 対象ファイル指定
-      cleanOnceBeforeBuildPatterns: [
-        // 複数ある場合は配列で指定
-        "**/*", // 出力フォルダ（output: で指定したパス）内のすべてのファイル
-      ],
-    }),
     new FixStyleOnlyEntriesPlugin(), // CSS別出力時の不要JSファイルを削除
     // CSSをJSにバンドルせず、別ファイルにわける
     new MiniCssExtractPlugin({
