@@ -1,6 +1,7 @@
 <?php
 
-function view($view, $vars = []) {
+function view($part, $vars = [])
+{
   extract($vars);
-  include dirname(__FILE__) . "/parts/{$view}.php";
+  include dirname(__FILE__) . "/parts/{$part}.php";
 }

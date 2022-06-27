@@ -1,7 +1,7 @@
 <?php include(__DIR__ . '/init.php'); ?>
 <!DOCTYPE html>
 <html lang="ja">
-<?php view(
+<?php part(
   "head",
   [
     'title' => 'トップページ | 会社名',
@@ -13,7 +13,7 @@
   <div id="top" class="p-top wrap-all">
 
     <!--=============== ▼HEADER ===============-->
-    <?php view("header"); ?>
+    <?php part("header"); ?>
     <img src="" alt="">
 
     <!--=============== ▼MAIN ===============-->
@@ -46,12 +46,11 @@
     </main><!-- /.main -->
 
     <!--=============== ▼FOOTER ===============-->
-    <?php view("footer"); ?>
+    <?php part("footer"); ?>
   </div>
 
   <!--=============== ▼JS ===============-->
-  <script src="/dist/js/app.js" defer></script>
-  <?php view("polyfill"); ?>
+  <?php part("scripts"); ?>
 </body>
 
 </html>

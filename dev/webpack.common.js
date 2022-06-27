@@ -11,14 +11,7 @@ module.exports = {
   // エントリーポイントの設定
   entry: {
     // コンパイル対象のファイルを指定
-    app: path.resolve(__dirname, "../assets/js/index.js"),
     styles: path.resolve(__dirname, "../assets/scss/styles.scss"),
-  },
-  // jsの出力設定
-  output: {
-    clean: true,
-    path: path.resolve(__dirname, "../dist"), // 出力先フォルダを絶対パスで指定
-    filename: "js/[name].js", // [name]にはentry:で指定したappが入る
   },
   module: {
     rules: [
