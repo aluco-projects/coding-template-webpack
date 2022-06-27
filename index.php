@@ -14,13 +14,11 @@
 
   <!--=============== ▼FAVICON NORMAL ===============-->
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="">
-  <link rel="shortcut icon" href="">
   <link rel="icon" sizes="16x16" href="">
   <link rel="icon" sizes="32x32" href="">
 
   <!--=============== ▼FAVICON SVG ===============-->
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="" type="image/svg+xml">
-  <link rel="shortcut icon" href="" type="image/svg+xml">
   <link rel="icon" sizes="16x16" href="" type="image/svg+xml">
   <link rel="icon" sizes="32x32" href="" type="image/svg+xml">
 
