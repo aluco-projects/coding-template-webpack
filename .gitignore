@@ -12,3 +12,4 @@ node_modules
 .lock-wscript
 .DS_Store
 test.xunit
+dist
