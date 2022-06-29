@@ -40,15 +40,6 @@
   "files.exclude": {
     "**/.git": false
   },
-  // ▼class作成時に閉じタグにコメントがはいる設定
-  "emmet.syntaxProfiles": {
-    "html": {
-      "filters": "html,c"
-    }
-  },
-  "emmet.preferences": {
-    "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
-  },
   "css.validate": false,
   "scss.validate": false,
   // ▼vscode規定のフォーマッターを使わない設定

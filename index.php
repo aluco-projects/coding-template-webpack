@@ -1,13 +1,11 @@
 <?php include(__DIR__ . '/init.php'); ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <meta charset="UTF-8">
   <title>タイトル</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#fff">
   <meta name="description" content="ディスクリプション">
   <link rel="canonical" href="">
@@ -28,7 +26,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&amp;family=Poppins:wght@200;400;700&amp;display=swap" media="print" onload="this.media='all'">
 
   <!--=============== ▼CSS ===============-->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <?php part("links"); ?>
 
   <!--=============== ▼DEFAULT OGP ===============-->
   <meta property="og:locale" content="ja_JP">
