@@ -3,8 +3,8 @@
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-  <title>タイトル</title>
   <meta charset="UTF-8">
+  <title>タイトル</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
@@ -25,7 +25,7 @@
   <!--=============== ▼GOOGLE FONTS ===============-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&amp;family=Poppins:wght@200;400;700&amp;display=swap" media="print" onload="this.media='all'">
 
   <!--=============== ▼CSS ===============-->
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -48,42 +48,17 @@
 
   <!--=============== ▼GOOGLE ANALYTICS ===============-->
   <?php part("analytics"); ?>
-
 </head>
 
 <body>
-  <div id="top" class="p-top wrap-all">
+  <div id="top">
 
     <!--=============== ▼HEADER ===============-->
     <?php part("header"); ?>
-    <img src="" alt="" width="" height="" loading="" decoding="" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 
     <!--=============== ▼MAIN ===============-->
-    <main class="p-main">
-      <section class="p-news">
-        <div class="p-news__inner">
-          <article class="p-news__article">
-            <h1 class="p-news__heading test">testtesttesttest</h1>
-            <ul class="p-news__list">
-              <li class="p-news__list-item">
-                <span class="p-news__label">通常ラベル</span>
-              </li>
-              <li class="p-news__list-item">
-                <span class="p-news__label--red">赤ラベル</span>
-              </li>
-            </ul>
-            <figure>
-              <img src="https://picsum.photos/seed/picsum/500/350" alt="の画像" class="p-news__thumbnail" width="" height="" loading="lazy" decoding="async" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            </figure>
-            <figure>
-              <img src="/assets/images/top/service.jpg?as=webp" alt="の画像" class="p-news__thumbnail" width="" height="" loading="lazy" decoding="async" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-            </figure>
-            <p class="p-news__text">ニュース記事</p>
-            <a href="" class="p-news__link" target="_blank" rel="noopener noreferrer">詳しくはこちら</a>
-          </article><!-- /.p-news--article -->
-        </div><!-- /.p-news--inner -->
-      </section><!-- /.p-news -->
-    </main><!-- /.main -->
+    <main>
+    </main>
 
     <!--=============== ▼FOOTER ===============-->
     <?php part("footer"); ?>
